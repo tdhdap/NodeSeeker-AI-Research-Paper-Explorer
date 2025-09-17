@@ -438,7 +438,7 @@ if not st.session_state.file_processed:
             with open(html_path, 'r', encoding='utf-8') as f:
                 html_content = f.read()
 
-            st.components.html(html_content, height=800)
+            st.html(html_content, height=800)
 
 # File Processing and Analysis (shows when file is uploaded)
 elif st.session_state.file_processed and st.session_state.uploaded_file:
