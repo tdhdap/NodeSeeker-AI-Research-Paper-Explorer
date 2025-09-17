@@ -1,0 +1,14 @@
+streamlit
+google-generativeai
+PyMuPDF
+Pillow
+streamlit
+langchain
+langchain-google-genai
+langchain-experimental
+pypdf
+pyvis
+networkx
+sentence-transformers
+langchain-text-splitters
+
