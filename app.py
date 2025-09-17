@@ -36,7 +36,8 @@ from langchain_core.pydantic_v1 import BaseModel
 st.set_page_config(
     page_title="NodeSeeker",
     page_icon="✏️️",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 st.markdown("""
 <style>
