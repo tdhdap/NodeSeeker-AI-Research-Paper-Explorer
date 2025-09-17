@@ -1,0 +1,15 @@
+[theme]
+# A professional purple for interactive elements
+primaryColor = "#8E44AD"
+
+# A clean white background for the main content area
+backgroundColor = "#FFFFFF"
+
+# A light grey for containers and the sidebar
+secondaryBackgroundColor = "#F0F2F6"
+
+# A dark, readable text color
+textColor = "#31333F"
+
+# A clean, modern, sans-serif font
+font = "sans serif"
