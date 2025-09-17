@@ -36,8 +36,7 @@ from langchain_core.pydantic_v1 import BaseModel
 st.set_page_config(
     page_title="NodeSeeker",
     page_icon="✏️️",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 st.markdown("""
 <style>
@@ -438,7 +437,7 @@ if not st.session_state.file_processed:
             with open(html_path, 'r', encoding='utf-8') as f:
                 html_content = f.read()
 
-            st.html(f'<div style="height: 800px; overflow: auto;">{html_content}</div>')
+            st.components.v1.html(html_content, height=800)
 
 # File Processing and Analysis (shows when file is uploaded)
 elif st.session_state.file_processed and st.session_state.uploaded_file:
@@ -581,6 +580,11 @@ elif st.session_state.file_processed and st.session_state.uploaded_file:
                                 st.markdown(deep_dive_content)
                 else:
                     st.info("Generate a knowledge graph first to use Deep Dive.")
+
+
+
+
+
 
 
 
